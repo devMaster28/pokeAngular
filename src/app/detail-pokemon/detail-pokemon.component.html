@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>{{pokemon.name}}</h1>
+    <img src="{{pokemon.sprites.front_default}}">
+    <p>numero : {{pokemon.order}}</p>
+
+    <mat-chip-list>
+        <mat-chip  *ngFor="let tipo of pokemon.types" > {{tipo.type.name}}</mat-chip>
+    </mat-chip-list>
+
+    <p>Peso : {{pokemon.weight}}</p>
+    <p>Altura: {{pokemon.height}}</p>
+
+    <button (click)="volver()"  mat-raised-button color="primary">Volver</button>
+</div>

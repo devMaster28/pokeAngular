@@ -1,0 +1,32 @@
+
+<div class="container">
+
+    <h1>Lista de pokemons</h1>
+
+    <div class="listaPokemons">
+
+        <div class="d-flex justify-content-between">
+            <button (click)="volver()" mat-fab color="accent">volver</button>
+
+            <mat-form-field class="example-full-width " >
+
+                <input id="buscar" (keyup.enter)="buscarpokemon()" matInput placeholder="pokemon a buscar">
+
+            </mat-form-field>
+
+        </div>
+        
+        
+        <list-pokemon *ngFor="let pokemon of pokemons" [pokemon]= "pokemon" class="Generalpokemon"></list-pokemon>
+    
+    </div>
+
+    <div class="botones">
+        <button (click)="atras()"  mat-raised-button color="primary">Anteriores</button>
+        <button (click)="siguentes()" mat-raised-button color="primary">Siguientes</button>
+
+    </div>
+ 
+           
+    
+</div>

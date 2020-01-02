@@ -1,0 +1,9 @@
+.ListPokemon{
+
+    display: flex;
+    background: #f5900d;
+    border-radius: 25px;
+    padding: 5px;
+    justify-content: space-around;
+
+}
